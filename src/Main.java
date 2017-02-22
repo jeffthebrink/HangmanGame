@@ -18,8 +18,6 @@ public class Main {
 
     public static void guess(String secretWord, int numberOfGuesses) {
 
-//        createFiller();
-
         char[] filler = new char[secretWord.length()];
         int i = 0;
         while (i < secretWord.length()) {
@@ -242,7 +240,7 @@ public class Main {
         System.out.println();
     }
 
-    public static void initGameGallows() {
+    private static void initGameGallows() {
         System.out.println();
         System.out.println("    ------------");
         System.out.println("    |          |");
