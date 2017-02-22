@@ -14,7 +14,6 @@ public class Main {
         System.out.println();
 
         guess(secretWord, numberOfGuesses);
-
     }
 
     public static void guess(String secretWord, int numberOfGuesses) {
@@ -35,7 +34,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        ArrayList<Character> guessedLetters = new ArrayList<Character>();
+        ArrayList<Character> guessedLetters = new ArrayList<>();
 
         while (numberOfGuesses > 0) {
             char x = scanner.next().charAt(0);
@@ -54,6 +53,7 @@ public class Main {
                 }
             } else {
                 numberOfGuesses--;
+                System.out.println("Sorry, wrong guess!");
                 switch (numberOfGuesses) {
                     case 9:
                         oneWrongAnswer();
